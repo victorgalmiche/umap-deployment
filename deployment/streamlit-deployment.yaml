@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: umap-deployment
+  name: streamlit-deployment
   labels:
-    app: umap
+    app: streamlit
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: umap
+      app: streamlit
   template:
     metadata:
       labels:
-        app: umap
+        app: streamlit
     spec:
       containers:
-      - name: umap
-        image: slithiaote/umap-api:latest
+      - name: streamlit
+        image: slithiaote/umap-streamlit:v0.2.0
         ports:
         - containerPort: 8000
