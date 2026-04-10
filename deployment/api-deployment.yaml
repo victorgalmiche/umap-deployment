@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: umap
-        image: slithiaote/umap-api:v0.2.0
+        image: slithiaote/umap-api:v0.2.1
         ports:
         - containerPort: 8000
