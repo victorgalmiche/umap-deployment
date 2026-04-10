@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: streamlit
-        image: slithiaote/umap-streamlit:v0.2.0
+        image: slithiaote/umap-streamlit:v0.2.1
         ports:
         - containerPort: 8000
