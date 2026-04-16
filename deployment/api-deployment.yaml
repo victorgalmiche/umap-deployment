@@ -19,3 +19,21 @@ spec:
         image: slithiaote/umap-api:v0.2.1
         ports:
         - containerPort: 8000
+        env:
+        - name: APP_ENV
+          value: "prod_user"
+        - name: MLFLOW_TRACKING_URI
+          valueFrom:
+            secretKeyRef:
+              name: mlflow-secrets
+              key: tracking-uri
+        - name: MLFLOW_TRACKING_USERNAME
+          valueFrom:
+            secretKeyRef:
+              name: mlflow-secrets
+              key: username
+        - name: MLFLOW_TRACKING_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: mlflow-secrets
+              key: password
