@@ -8,6 +8,10 @@ metadata:
     nginx.ingress.kubernetes.io/cors-allow-methods: "GET, POST, PUT, DELETE, OPTIONS"
     nginx.ingress.kubernetes.io/cors-allow-headers: "Authorization, Content-Type"
     nginx.ingress.kubernetes.io/cors-allow-credentials: "true"
+    nginx.ingress.kubernetes.io/proxy-body-size: 2m # limit request size
+    nginx.ingress.kubernetes.io/limit-rps: "1" # limit requests per second
+    nginx.ingress.kubernetes.io/limit-rpm: "60" 
+    nginx.ingress.kubernetes.io/limit-connections: "2" 
 spec:
   ingressClassName: nginx
   tls:
