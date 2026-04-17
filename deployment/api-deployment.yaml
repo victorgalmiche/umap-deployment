@@ -15,8 +15,8 @@ spec:
         app: umap
     spec:
       containers:
-      - name: umap # v0.4
-        image: slithiaote/umap-api@sha256:58ad4c8a71694a8da93ac5c4ca6b754153d4484059e5ccac2ed88bdc1d05a75e
+      - name: umap # v0.5.1
+        image: slithiaote/umap-api@sha256:2963104ba4648ac6c66dcb0b3b34fdcccb7fda74a63ef79470bc3ecd86b6af97
         ports:
         - containerPort: 8000
         env:
