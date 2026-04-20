@@ -15,7 +15,7 @@ spec:
         app: streamlit
     spec:
       containers:
-      - name: streamlit # v0.9.0
-        image: slithiaote/umap-streamlit@sha256:7d02b5ac1409b707c1decb0329ef8a2ef588eb6882ca38188c44c24393d38de6
+      - name: streamlit # v1.0.0
+        image: slithiaote/umap-streamlit@sha256:bac2edf3d908b51f2ff2b6fced2728615dbbf6a1002ef6bf210674ae5747e377
         ports:
         - containerPort: 8501
